@@ -1,7 +1,7 @@
 
 ## 8. `docs/course-outline.md`
 
-```markdown
+
 # Web Development — Course Outline
 
 ## Semester
@@ -58,9 +58,52 @@
 
 ## Progress
 
-| Area | Status |
-|---|---|
-| HTML |  In Progress |
-| CSS |  Upcoming |
-| JavaScript |  Upcoming |
-| Projects |  Upcoming |
+
+## 5. Current Topics
+
+### HTML Lists
+
+- Unordered lists `<ul>`
+- Ordered lists `<ol>`
+- List items `<li>`
+- Description lists `<dl>`
+- Description terms `<dt>`
+- Description details `<dd>`
+- Nested lists
+
+### HTML Tables
+
+- Tables `<table>`
+- Table rows `<tr>`
+- Table headers `<th>`
+- Table data `<td>`
+- Table captions `<caption>`
+- Table head `<thead>`
+- Table body `<tbody>`
+- Table footer `<tfoot>`
+- `colspan`
+- `rowspan`
+
+---
+
+## Current Assignment
+
+### Assignment 01 — Personal Transcript
+
+- Create a personal academic transcript.
+- Use **HTML only**.
+- Use HTML tables to organize transcript data.
+- Practice table rows, headers and data cells.
+- Use `colspan` and/or `rowspan` where appropriate.
+- CSS and JavaScript are not required.
+
+### Assignment Location
+
+```text
+Assignments/
+└── assignment-01/
+    ├── README.md
+    └── transcript.html
+
+
+
