@@ -1,0 +1,592 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>academic transscript table</title>
+    <link rel="shortcut icon" href="/Labs/assets/logos/kust_ioc_logo.jpg" type="image/x-icon">
+    <style>
+      a {
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Academic Transcript</h1>
+    <hr />
+    <br />
+    <br />
+
+
+   
+     <a href="/Practice/tables/student_Info.html">chech student info table</a>
+    <a href="/Practice/tables/academic_transcript.html" >check academic transcript</a>
+    <a href="/Practice/tables/summary.html">check summary table</a>
+    <a href="/Practice/tables/grade.html">check grade table</a>
+   
+
+    <br />
+    <br />
+    <br />
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <th colspan="8">
+        <strong>Semester 5 — Course Details</strong>
+        <tr>
+          <th>Course Code</th>
+          <th>Course Title</th>
+          <th>Credit Hours</th>
+          <th>Total Marks</th>
+          <th>Obtained Marks</th>
+          <th>Grade</th>
+          <th>Grade Point</th>
+          <th>Status</th>
+        </tr>
+      </th>
+      <tr>
+        <td>CS-501</td>
+        <td>Web Development</td>
+        <td>3</td>
+        <td>100</td>
+        <td>85</td>
+        <td>A</td>
+        <td>4.00</td>
+        <td>Pass</td>
+      </tr>
+
+      <tr>
+        <td>CS-502</td>
+        <td>Database Systems</td>
+        <td>3</td>
+        <td>100</td>
+        <td>78</td>
+        <td>B+</td>
+        <td>3.50</td>
+        <td>Pass</td>
+      </tr>
+
+      <tr>
+        <td>CS-503</td>
+        <td>Computer Networks</td>
+        <td>3</td>
+        <td>100</td>
+        <td>82</td>
+        <td>A-</td>
+        <td>3.75</td>
+        <td>Pass</td>
+      </tr>
+
+      <tr>
+        <td>CS-504</td>
+        <td>Software Engineering</td>
+        <td>3</td>
+        <td>100</td>
+        <td>75</td>
+        <td>B</td>
+        <td>3.00</td>
+        <td>Pass</td>
+      </tr>
+
+      <tr>
+        <th colspan="2">Total</th>
+        <th>12</th>
+        <th>400</th>
+        <th>320</th>
+        <th>-</th>
+        <th>-</th>
+        <th>Pass</th>
+      </tr>
+    </table>
+
+     <br>
+    <br>
+
+    <a href="/Practice/tables/index.html">Home</a>
+  </body>
+</html> -->
+
+
+<!doctype html> <html lang="en"> <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Academic Transcript</title>
+
+<link
+    rel="shortcut icon"
+    href="../../Labs/assets/logos/kust_ioc_logo.jpg"
+    type="image/x-icon"
+>
+
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f5f5f5;
+        color: #222;
+    }
+
+
+    /* Header */
+
+    header {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    header h1 {
+        margin: 0 0 8px;
+    }
+
+    header p {
+        margin: 0;
+        color: #ddd;
+    }
+
+
+    /* Navigation */
+
+    nav {
+        background-color: white;
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+        display: inline-block;
+        text-decoration: none;
+        color: #222;
+        border: 1px solid #222;
+        padding: 8px 12px;
+        margin: 4px;
+        border-radius: 5px;
+    }
+
+    nav a:hover {
+        background-color: #222;
+        color: white;
+    }
+
+
+    /* Main */
+
+    main {
+        max-width: 1200px;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+
+    /* Information */
+
+    .intro {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+
+
+    /* Transcript */
+
+    .transcript {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 25px;
+        overflow-x: auto;
+    }
+
+    .transcript h2 {
+        margin-top: 0;
+        border-bottom: 2px solid #222;
+        padding-bottom: 10px;
+    }
+
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        min-width: 800px;
+    }
+
+    th,
+    td {
+        border: 1px solid #555;
+        padding: 12px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #222;
+        color: white;
+    }
+
+    .semester-title {
+        background-color: #444;
+        color: white;
+        font-size: 18px;
+    }
+
+    .total {
+        background-color: #eee;
+        font-weight: bold;
+    }
+
+
+    /* Status */
+
+    .pass {
+        color: green;
+        font-weight: bold;
+    }
+
+
+    /* Bottom Navigation */
+
+    .bottom-nav {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .bottom-nav a {
+        display: inline-block;
+        text-decoration: none;
+        color: #222;
+        border: 1px solid #222;
+        padding: 8px 14px;
+        margin: 4px;
+        border-radius: 5px;
+    }
+
+    .bottom-nav a:hover {
+        background-color: #222;
+        color: white;
+    }
+
+
+    /* Footer */
+
+    footer {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+</style>
+
+</head> <body>
+<!-- Header -->
+
+<header>
+
+    <h1>Academic Transcript</h1>
+
+    <p>
+        HTML Table Practice — Semester 5 Course Details
+    </p>
+
+</header>
+
+
+<!-- Navigation -->
+
+<nav>
+
+    <a href="../practice.html">
+        ← Back to Practice
+    </a>
+
+    <a href="index.html">
+        Table Practice
+    </a>
+
+    <a href="../../index.html">
+        Main Home
+    </a>
+
+    <a href="../../Docs/docs.html">
+        See Docs
+    </a>
+
+</nav>
+
+
+<main>
+
+
+    <!-- Introduction -->
+
+    <section class="intro">
+
+        <h2>Academic Transcript</h2>
+
+        <p>
+            This table demonstrates an academic transcript using
+            HTML table elements such as
+            <code>&lt;table&gt;</code>,
+            <code>&lt;tr&gt;</code>,
+            <code>&lt;th&gt;</code>,
+            <code>&lt;td&gt;</code>,
+            and <code>colspan</code>.
+        </p>
+
+    </section>
+
+
+    <!-- Transcript Table -->
+
+    <section class="transcript">
+
+        <h2>Semester 5 — Course Details</h2>
+
+        <table>
+
+            <tr>
+
+                <th class="semester-title" colspan="8">
+                    Semester 5 — Course Details
+                </th>
+
+            </tr>
+
+
+            <tr>
+
+                <th>Course Code</th>
+
+                <th>Course Title</th>
+
+                <th>Credit Hours</th>
+
+                <th>Total Marks</th>
+
+                <th>Obtained Marks</th>
+
+                <th>Grade</th>
+
+                <th>Grade Point</th>
+
+                <th>Status</th>
+
+            </tr>
+
+
+            <tr>
+
+                <td>CS-501</td>
+
+                <td>Web Development</td>
+
+                <td>3</td>
+
+                <td>100</td>
+
+                <td>85</td>
+
+                <td>A</td>
+
+                <td>4.00</td>
+
+                <td class="pass">Pass</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>CS-502</td>
+
+                <td>Database Systems</td>
+
+                <td>3</td>
+
+                <td>100</td>
+
+                <td>78</td>
+
+                <td>B+</td>
+
+                <td>3.50</td>
+
+                <td class="pass">Pass</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>CS-503</td>
+
+                <td>Computer Networks</td>
+
+                <td>3</td>
+
+                <td>100</td>
+
+                <td>82</td>
+
+                <td>A-</td>
+
+                <td>3.75</td>
+
+                <td class="pass">Pass</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>CS-504</td>
+
+                <td>Software Engineering</td>
+
+                <td>3</td>
+
+                <td>100</td>
+
+                <td>75</td>
+
+                <td>B</td>
+
+                <td>3.00</td>
+
+                <td class="pass">Pass</td>
+
+            </tr>
+
+
+            <tr class="total">
+
+                <th colspan="2">
+                    Total
+                </th>
+
+                <th>
+                    12
+                </th>
+
+                <th>
+                    400
+                </th>
+
+                <th>
+                    320
+                </th>
+
+                <th>
+                    -
+                </th>
+
+                <th>
+                    -
+                </th>
+
+                <th class="pass">
+                    Pass
+                </th>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <!-- Table Concepts -->
+
+    <section class="intro">
+
+        <h2>HTML Concepts Used</h2>
+
+        <ul>
+
+            <li>
+                <code>&lt;table&gt;</code> — Creates the table
+            </li>
+
+            <li>
+                <code>&lt;tr&gt;</code> — Creates a table row
+            </li>
+
+            <li>
+                <code>&lt;th&gt;</code> — Creates a table heading
+            </li>
+
+            <li>
+                <code>&lt;td&gt;</code> — Creates table data
+            </li>
+
+            <li>
+                <code>colspan</code> — Merges multiple columns
+            </li>
+
+            <li>
+                CSS — Used to style the table
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- Navigation -->
+
+    <div class="bottom-nav">
+
+        <a href="student_Info.html">
+            Student Info
+        </a>
+
+        <a href="summary.html">
+            Summary Table
+        </a>
+
+        <a href="grade.html">
+            Grade Table
+        </a>
+
+        <a href="index.html">
+            ← Table Practice
+        </a>
+
+        <a href="../practice.html">
+            Practice
+        </a>
+
+    </div>
+
+
+</main>
+
+
+<!-- Footer -->
+
+<footer>
+
+    <p>
+        Web Development Course
+    </p>
+
+    <p>
+        HTML Table Practice &bull; Academic Transcript
+    </p>
+
+</footer>
+
+</body> </html>

@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HTML Documentation</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        color: #222;
+      }
+
+      header {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+      }
+
+      header h1 {
+        margin: 0 0 8px;
+      }
+
+      header p {
+        color: #ccc;
+        margin: 0;
+      }
+
+      nav {
+        background: white;
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+      }
+
+      nav a {
+        display: inline-block;
+        text-decoration: none;
+        color: #222;
+        border: 1px solid #222;
+        padding: 8px 14px;
+        margin: 4px;
+        border-radius: 5px;
+      }
+
+      nav a:hover {
+        background: #222;
+        color: white;
+      }
+
+      main {
+        max-width: 1000px;
+        margin: 35px auto;
+        padding: 0 20px;
+      }
+
+      .intro,
+      .doc-card {
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 25px;
+      }
+
+      .intro {
+        margin-bottom: 25px;
+      }
+
+      .intro h2 {
+        margin-top: 0;
+      }
+
+      .docs {
+        display: grid;
+        gap: 15px;
+      }
+
+      .doc-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .doc-card h2 {
+        margin: 0 0 5px;
+      }
+
+      .doc-card p {
+        margin: 0;
+        color: #666;
+      }
+
+      .doc-card a {
+        text-decoration: none;
+        color: white;
+        background: #222;
+        padding: 9px 14px;
+        border-radius: 5px;
+        white-space: nowrap;
+      }
+
+      .doc-card a:hover {
+        background: #444;
+      }
+
+      footer {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+      }
+
+      @media (max-width: 650px) {
+        .doc-card {
+          display: block;
+        }
+
+        .doc-card a {
+          display: inline-block;
+          margin-top: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Documentation</h1>
+
+      <p>Complete HTML Course Documentation</p>
+    </header>
+
+    <nav>
+      <a href="../docs.html"> ← Documentation Home </a>
+
+      <a href="../../index.html"> Main Home </a>
+    </nav>
+
+    <main>
+      <section class="intro">
+        <h2>HTML Topics</h2>
+
+        <p>Select any topic below to read its complete documentation.</p>
+      </section>
+
+      <section class="docs">
+        <div class="doc-card">
+          <div>
+            <h2>HTML Basics</h2>
+
+            <p>Learn the basic structure and syntax of HTML.</p>
+          </div>
+
+          <a href="html-basics.html"> Read Docs </a>
+        </div>
+
+        <div class="doc-card">
+          <div>
+            <h2>HTML Lists</h2>
+
+            <p>Learn unordered, ordered, description and nested lists.</p>
+          </div>
+
+          <a href="html-lists.html"> Read Docs </a>
+        </div>
+
+        <div class="doc-card">
+          <div>
+            <h2>HTML Tables</h2>
+
+            <p>Learn tables, rows, columns, colspan and rowspan.</p>
+          </div>
+
+          <a href="html-tables.html"> Read Docs </a>
+        </div>
+
+        <div class="doc-card">
+          <div>
+            <h2>HTML Forms</h2>
+
+            <p>Learn form elements, inputs and form structure.</p>
+          </div>
+
+          <a href="html-forms.html"> Read Docs </a>
+        </div>
+
+        <div class="doc-card">
+          <div>
+            <h2>HTML Links</h2>
+
+            <p>Learn hyperlinks, paths and navigation.</p>
+          </div>
+
+          <a href="html-links.html"> Read Docs </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Web Development Course &bull; HTML Documentation</p>
+    </footer>
+  </body>
+</html>

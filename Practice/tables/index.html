@@ -1,0 +1,855 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assignment 01 Academic Transcript</title>
+    <link rel="shortcut icon" href="/Labs/assets/logos/kust_logo.jpg" type="image/x-icon">
+
+    <style>
+        a{
+            text-decoration: none;
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <h1>HTML TABLE PRACTICE & TYPES</h1>
+
+    <a href="/Practice/tables/student_Info.html" >chech student info table</a>
+
+    <a href="/Practice/tables/academic_transcript.html"
+      >check academic transcript</a
+    >
+
+    <a href="/Practice/tables/summary.html">check summary table</a>
+
+    <a href="/Practice/tables/grade.html">check grade table</a>
+
+    <h1>TABLE :</h1>
+    <a href="/Assignments/assignment-01/transcript.html">view Assignment</a>
+    <a href="/Docs/docs.html">See Docs</a>
+    <p> table is a collection of data displayed in rows and columns. 
+
+    </p>
+
+    <h3>th :</h3>
+    <p>
+        th is used to define table header. It is also used to define table footer.
+    </p>
+
+    <h3>tr :</h3>
+    <p>
+        tr is used to define table row.
+    </p>
+
+    <h3>td :</h3>
+    <p>
+        td is used to define table data.
+    </p>
+
+    <h3>colspan :</h3>
+    <p>
+        colspan is used to merge columns in a table.
+    </p>
+
+    <h3>rowspan :</h3>
+    <p>
+        rowspan is used to merge rows in a table.
+    </p>
+    <table border="0" cellpadding="5" cellspacing="0" width="100%">
+      <tr>
+        <td>
+          ____________________<br />
+          Student Signature
+        </td>
+
+        <td>
+          ____________________<br />
+          Department Chairperson
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <p>
+      <small> This transcript is prepared for academic record purposes. </small>
+    </p>
+  </body>
+</html> -->
+
+
+<!doctype html> <html lang="en"> <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HTML Table Practice</title>
+
+<link
+    rel="shortcut icon"
+    href="../../Labs/assets/logos/kust_logo.jpg"
+    type="image/x-icon"
+>
+
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f5f5f5;
+        color: #222;
+        line-height: 1.6;
+    }
+
+    /* Header */
+
+    header {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    header h1 {
+        margin: 0 0 10px;
+    }
+
+    header p {
+        margin: 0;
+        color: #ddd;
+    }
+
+
+    /* Navigation */
+
+    nav {
+        background-color: white;
+        padding: 15px 20px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+        display: inline-block;
+        text-decoration: none;
+        color: #222;
+        border: 1px solid #222;
+        padding: 8px 14px;
+        margin: 4px;
+        border-radius: 5px;
+    }
+
+    nav a:hover {
+        background-color: #222;
+        color: white;
+    }
+
+
+    /* Main */
+
+    main {
+        max-width: 1100px;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+
+    /* Sections */
+
+    section {
+        background-color: white;
+        padding: 25px;
+        margin-bottom: 25px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+
+    section h2 {
+        margin-top: 0;
+        border-bottom: 2px solid #222;
+        padding-bottom: 8px;
+    }
+
+
+    /* Practice links */
+
+    .practice-links {
+        margin-top: 15px;
+    }
+
+    .practice-links a {
+        display: inline-block;
+        text-decoration: none;
+        color: #222;
+        border: 1px solid #222;
+        padding: 8px 12px;
+        margin: 5px 5px 5px 0;
+        border-radius: 5px;
+    }
+
+    .practice-links a:hover {
+        background-color: #222;
+        color: white;
+    }
+
+
+    /* Code */
+
+    pre {
+        background-color: #1e1e1e;
+        color: #f5f5f5;
+        padding: 20px;
+        border-radius: 6px;
+        overflow-x: auto;
+    }
+
+    code {
+        font-family: Consolas, monospace;
+    }
+
+
+    /* Tables */
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+    }
+
+    th,
+    td {
+        border: 1px solid #555;
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #222;
+        color: white;
+    }
+
+    caption {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+
+    /* Footer */
+
+    footer {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+</style>
+
+</head> <body>
+<!-- Header -->
+
+<header>
+
+    <h1>HTML Table Practice</h1>
+
+    <p>
+        HTML Tables, Types, Attributes and Practical Examples
+    </p>
+
+</header>
+
+
+<!-- Navigation -->
+
+<nav>
+
+    <a href="/Practice/index.html">
+        ← Back to Practice
+    </a>
+
+    <a href="../../index.html">
+        Main Home
+    </a>
+
+    <a href="../../Docs/docs.html">
+        See Docs
+    </a>
+
+</nav>
+
+
+<main>
+
+
+    <!-- Introduction -->
+
+    <section>
+
+        <h2>HTML Tables</h2>
+
+        <p>
+            HTML tables are used to organize and display data
+            in rows and columns.
+        </p>
+
+        <p>
+            In this practice section, different types of HTML
+            tables and important table attributes are demonstrated.
+        </p>
+
+    </section>
+
+
+    <!-- Practice Files -->
+
+    <section>
+
+        <h2>Table Practice Files</h2>
+
+        <p>
+            Open the individual practice files to view different
+            table examples.
+        </p>
+
+        <div class="practice-links">
+
+            <a href="student_Info.html">
+                Student Info Table
+            </a>
+
+            <a href="academic_transcript.html">
+                Academic Transcript
+            </a>
+
+            <a href="summary.html">
+                Summary Table
+            </a>
+
+            <a href="grade.html">
+                Grade Table
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Basic Table -->
+
+    <section>
+
+        <h2>1. Basic HTML Table</h2>
+
+        <p>
+            A basic table consists of rows and data cells.
+        </p>
+
+        <pre><code>&lt;table&gt;
+
+&lt;tr&gt;
+    &lt;td&gt;HTML&lt;/td&gt;
+    &lt;td&gt;CSS&lt;/td&gt;
+    &lt;td&gt;JavaScript&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+    &lt;td&gt;Frontend&lt;/td&gt;
+    &lt;td&gt;Styling&lt;/td&gt;
+    &lt;td&gt;Programming&lt;/td&gt;
+&lt;/tr&gt;
+
+
+</table></code></pre>
+
+    </section>
+
+
+    <!-- Table Header -->
+
+    <section>
+
+        <h2>2. Table Header</h2>
+
+        <p>
+            The <code>&lt;th&gt;</code> element defines a table header.
+        </p>
+
+        <table>
+
+            <tr>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Grade</th>
+            </tr>
+
+            <tr>
+                <td>HTML</td>
+                <td>85</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>CSS</td>
+                <td>80</td>
+                <td>A</td>
+            </tr>
+
+        </table>
+
+        <pre><code>&lt;table&gt;
+
+&lt;tr&gt;
+    &lt;th&gt;Subject&lt;/th&gt;
+    &lt;th&gt;Marks&lt;/th&gt;
+    &lt;th&gt;Grade&lt;/th&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+    &lt;td&gt;HTML&lt;/td&gt;
+    &lt;td&gt;85&lt;/td&gt;
+    &lt;td&gt;A&lt;/td&gt;
+&lt;/tr&gt;
+
+
+</table></code></pre>
+
+    </section>
+
+
+    <!-- Colspan -->
+
+    <section>
+
+        <h2>3. Colspan</h2>
+
+        <p>
+            The <code>colspan</code> attribute is used to merge
+            two or more columns.
+        </p>
+
+        <table>
+
+            <tr>
+                <th colspan="3">
+                    Student Information
+                </th>
+            </tr>
+
+            <tr>
+                <td>Ali</td>
+                <td>BSCS</td>
+                <td>5th Semester</td>
+            </tr>
+
+        </table>
+
+        <pre><code>&lt;tr&gt;
+&lt;th colspan="3"&gt;
+    Student Information
+&lt;/th&gt;
+
+
+</tr></code></pre>
+
+    </section>
+
+
+    <!-- Rowspan -->
+
+    <section>
+
+        <h2>4. Rowspan</h2>
+
+        <p>
+            The <code>rowspan</code> attribute is used to merge
+            two or more rows.
+        </p>
+
+        <table>
+
+            <tr>
+                <th rowspan="2">
+                    Student
+                </th>
+
+                <th>
+                    Subject
+                </th>
+
+                <th>
+                    Marks
+                </th>
+            </tr>
+
+            <tr>
+
+                <td>HTML</td>
+                <td>85</td>
+
+            </tr>
+
+        </table>
+
+        <pre><code>&lt;th rowspan="2"&gt;
+Student
+
+
+</th></code></pre>
+
+    </section>
+
+
+    <!-- Student Table -->
+
+    <section>
+
+        <h2>5. Student Information Table</h2>
+
+        <p>
+            A practical example of a student information table.
+        </p>
+
+        <table>
+
+            <caption>
+                Student Information
+            </caption>
+
+            <tr>
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>Department</th>
+                <th>Semester</th>
+            </tr>
+
+            <tr>
+                <td>Ali</td>
+                <td>001</td>
+                <td>Computer Science</td>
+                <td>5th</td>
+            </tr>
+
+            <tr>
+                <td>Ahmed</td>
+                <td>002</td>
+                <td>Computer Science</td>
+                <td>5th</td>
+            </tr>
+
+        </table>
+
+        <div class="practice-links">
+
+            <a href="student_Info.html">
+                Open Full Practice
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Academic Transcript -->
+
+    <section>
+
+        <h2>6. Academic Transcript</h2>
+
+        <p>
+            A complete academic transcript demonstrates the use
+            of multiple rows, columns and table structures.
+        </p>
+
+        <table>
+
+            <tr>
+                <th>Course</th>
+                <th>Credit Hours</th>
+                <th>Marks</th>
+                <th>Grade</th>
+            </tr>
+
+            <tr>
+                <td>Web Development</td>
+                <td>3</td>
+                <td>85</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>Database</td>
+                <td>3</td>
+                <td>80</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>Programming</td>
+                <td>3</td>
+                <td>78</td>
+                <td>B+</td>
+            </tr>
+
+        </table>
+
+        <div class="practice-links">
+
+            <a href="academic_transcript.html">
+                Open Full Transcript
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Summary -->
+
+    <section>
+
+        <h2>7. Summary Table</h2>
+
+        <p>
+            Summary tables can be used to present calculated
+            or summarized information.
+        </p>
+
+        <table>
+
+            <tr>
+                <th>Total Subjects</th>
+                <th>Total Marks</th>
+                <th>Obtained Marks</th>
+                <th>Percentage</th>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>500</td>
+                <td>425</td>
+                <td>85%</td>
+            </tr>
+
+        </table>
+
+        <div class="practice-links">
+
+            <a href="summary.html">
+                Open Summary Table
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Grade Table -->
+
+    <section>
+
+        <h2>8. Grade Table</h2>
+
+        <p>
+            A grade table maps marks or percentage ranges
+            to corresponding grades.
+        </p>
+
+        <table>
+
+            <tr>
+                <th>Marks</th>
+                <th>Grade</th>
+            </tr>
+
+            <tr>
+                <td>90 - 100</td>
+                <td>A+</td>
+            </tr>
+
+            <tr>
+                <td>80 - 89</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>70 - 79</td>
+                <td>B</td>
+            </tr>
+
+            <tr>
+                <td>60 - 69</td>
+                <td>C</td>
+            </tr>
+
+            <tr>
+                <td>50 - 59</td>
+                <td>D</td>
+            </tr>
+
+        </table>
+
+        <div class="practice-links">
+
+            <a href="grade.html">
+                Open Grade Table
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Important Tags -->
+
+    <section>
+
+        <h2>Important Table Tags</h2>
+
+        <table>
+
+            <tr>
+                <th>Tag</th>
+                <th>Purpose</th>
+            </tr>
+
+            <tr>
+                <td>&lt;table&gt;</td>
+                <td>Defines an HTML table</td>
+            </tr>
+
+            <tr>
+                <td>&lt;tr&gt;</td>
+                <td>Defines a table row</td>
+            </tr>
+
+            <tr>
+                <td>&lt;th&gt;</td>
+                <td>Defines a table header cell</td>
+            </tr>
+
+            <tr>
+                <td>&lt;td&gt;</td>
+                <td>Defines a table data cell</td>
+            </tr>
+
+            <tr>
+                <td>&lt;caption&gt;</td>
+                <td>Defines a table caption</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <!-- Important Attributes -->
+
+    <section>
+
+        <h2>Important Table Attributes</h2>
+
+        <table>
+
+            <tr>
+                <th>Attribute</th>
+                <th>Purpose</th>
+            </tr>
+
+            <tr>
+                <td>colspan</td>
+                <td>Merges multiple columns</td>
+            </tr>
+
+            <tr>
+                <td>rowspan</td>
+                <td>Merges multiple rows</td>
+            </tr>
+
+            <tr>
+                <td>border</td>
+                <td>Defines table border</td>
+            </tr>
+
+            <tr>
+                <td>cellpadding</td>
+                <td>Adds space inside cells</td>
+            </tr>
+
+            <tr>
+                <td>cellspacing</td>
+                <td>Controls space between cells</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <!-- Assignment -->
+
+    <section>
+
+        <h2>Related Assignment</h2>
+
+        <p>
+            The following assignment is related to HTML tables
+            and academic transcript design.
+        </p>
+
+        <div class="practice-links">
+
+            <a href="../../Assignments/assignment-01/transcript.html">
+                View Assignment 01
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Documentation -->
+
+    <section>
+
+        <h2>Documentation</h2>
+
+        <p>
+            Read the complete HTML Lists and Tables documentation
+            from the documentation section.
+        </p>
+
+        <div class="practice-links">
+
+            <a href="../../Docs/docs.html">
+                View Documentation
+            </a>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        Web Development Course</p>
+
+    <p>
+        HTML Table Practice
+    </p>
+
+</footer>
+
+</body> </html>

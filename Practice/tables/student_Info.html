@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Student Information</title>
+
+    <link
+      rel="shortcut icon"
+      href="../../Labs/assets/logos/kust_ioc_logo.jpg"
+      type="image/x-icon"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f5f5f5;
+        color: #222;
+        line-height: 1.6;
+      }
+
+      /* Header */
+
+      header {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+      }
+
+      header h1 {
+        margin: 0 0 8px;
+      }
+
+      header p {
+        margin: 0;
+        color: #ddd;
+      }
+
+      /* Navigation */
+
+      nav {
+        background-color: white;
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+      }
+
+      nav a {
+        display: inline-block;
+        text-decoration: none;
+        color: #222;
+        border: 1px solid #222;
+        padding: 8px 12px;
+        margin: 4px;
+        border-radius: 5px;
+      }
+
+      nav a:hover {
+        background-color: #222;
+        color: white;
+      }
+
+      /* Main */
+
+      main {
+        max-width: 1250px;
+        margin: 30px auto;
+        padding: 0 20px;
+      }
+
+      /* Introduction */
+
+      .intro {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 25px;
+        margin-bottom: 25px;
+      }
+
+      .intro h2 {
+        margin-top: 0;
+      }
+
+      /* Student Table */
+
+      .table-section {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 25px;
+        overflow-x: auto;
+      }
+
+      .table-section h2 {
+        margin-top: 0;
+        border-bottom: 2px solid #222;
+        padding-bottom: 10px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        min-width: 1000px;
+      }
+
+      th,
+      td {
+        border: 1px solid #555;
+        padding: 12px;
+      }
+
+      th {
+        background-color: #222;
+        color: white;
+        text-align: center;
+      }
+
+      td {
+        text-align: center;
+      }
+
+      .title {
+        background-color: #444;
+        color: white;
+        font-size: 18px;
+      }
+
+      /* Concepts */
+
+      .concepts {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 25px;
+        margin-top: 25px;
+      }
+
+      .concepts h2 {
+        margin-top: 0;
+      }
+
+      /* Bottom Navigation */
+
+      .bottom-nav {
+        text-align: center;
+        margin-top: 25px;
+      }
+
+      .bottom-nav a {
+        display: inline-block;
+        text-decoration: none;
+        color: #222;
+        border: 1px solid #222;
+        padding: 8px 14px;
+        margin: 4px;
+        border-radius: 5px;
+      }
+
+      .bottom-nav a:hover {
+        background-color: #222;
+        color: white;
+      }
+
+      /* Footer */
+
+      footer {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header>
+      <h1>Student Information</h1>
+
+      <p>HTML Table Practice — Student Information Table</p>
+    </header>
+
+    <!-- Navigation -->
+
+    <nav>
+      <a href="../practice.html"> ← Back to Practice </a>
+
+      <a href="index.html"> Table Practice </a>
+
+      <a href="../../index.html"> Main Home </a>
+
+      <a href="../../Docs/docs.html"> See Docs </a>
+    </nav>
+
+    <main>
+      <!-- Introduction -->
+
+      <section class="intro">
+        <h2>Student Information Table</h2>
+
+        <p>
+          This table demonstrates how student information can be organized using
+          HTML table rows and columns.
+        </p>
+
+        <p>
+          It uses table headings, table data cells and
+          <code>colspan</code> to create the table structure.
+        </p>
+      </section>
+
+      <!-- Student Table -->
+
+      <section class="table-section">
+        <h2>Student Records</h2>
+
+        <table>
+          <!-- Table Title -->
+
+          <tr>
+            <th class="title" colspan="8">Student Information</th>
+          </tr>
+
+          <!-- Table Headings -->
+
+          <tr>
+            <th>Student Name</th>
+
+            <th>Father Name</th>
+
+            <th>Registration No.</th>
+
+            <th>Roll No.</th>
+
+            <th>Program</th>
+
+            <th>Semester</th>
+
+            <th>Academic Year</th>
+
+            <th>Session</th>
+          </tr>
+
+          <!-- Student 1 -->
+
+          <tr>
+            <td>Ali Ahmad</td>
+
+            <td>Muhammad Ahmad</td>
+
+            <td>2022-CS-001</td>
+
+            <td>CS-001</td>
+
+            <td>BS Computer Science</td>
+
+            <td>5th Semester</td>
+
+            <td>2026</td>
+
+            <td>2025-2026</td>
+          </tr>
+
+          <!-- Student 2 -->
+
+          <tr>
+            <td>Kashif</td>
+
+            <td>Hashmat Ali Khan</td>
+
+            <td>SE120242017</td>
+
+            <td>SE-17</td>
+
+            <td>BS Software Engineering</td>
+
+            <td>5th Semester</td>
+
+            <td>2026</td>
+
+            <td>2025-2026</td>
+          </tr>
+
+          <!-- Student 3 -->
+
+          <tr>
+            <td>Majid</td>
+
+            <td>Amjid</td>
+
+            <td>SE120242019</td>
+
+            <td>SE-19</td>
+
+            <td>BS Software Engineering</td>
+
+            <td>5th Semester</td>
+
+            <td>2026</td>
+
+            <td>2025-2026</td>
+          </tr>
+
+          <!-- Student 4 -->
+
+          <tr>
+            <td>Rohan</td>
+
+            <td>Sajid Ali Khan</td>
+
+            <td>SE120242020</td>
+
+            <td>SE-20</td>
+
+            <td>BS Software Engineering</td>
+
+            <td>5th Semester</td>
+
+            <td>2026</td>
+
+            <td>2025-2026</td>
+          </tr>
+
+          <!-- Student 5 -->
+
+          <tr>
+            <td>Abdullah</td>
+
+            <td>Shahid Rauf</td>
+
+            <td>SE120242021</td>
+
+            <td>SE-21</td>
+
+            <td>BS Software Engineering</td>
+
+            <td>5th Semester</td>
+
+            <td>2026</td>
+
+            <td>2025-2026</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- HTML Concepts -->
+
+      <section class="concepts">
+        <h2>HTML Concepts Used</h2>
+
+        <ul>
+          <li>
+            <code>&lt;table&gt;</code>
+            — Defines the HTML table
+          </li>
+
+          <li>
+            <code>&lt;tr&gt;</code>
+            — Defines a table row
+          </li>
+
+          <li>
+            <code>&lt;th&gt;</code>
+            — Defines a table heading
+          </li>
+
+          <li>
+            <code>&lt;td&gt;</code>
+            — Defines table data
+          </li>
+
+          <li>
+            <code>colspan</code>
+            — Merges multiple columns
+          </li>
+
+          <li>CSS — Used to style the table and page</li>
+        </ul>
+      </section>
+
+      <!-- Bottom Navigation -->
+
+      <div class="bottom-nav">
+        <a href="academic_transcript.html"> Academic Transcript </a>
+
+        <a href="summary.html"> Summary Table </a>
+
+        <a href="grade.html"> Grade Table </a>
+
+        <a href="index.html"> ← Table Practice </a>
+
+        <a href="../practice.html"> Practice Home </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+      <p>Web Development Course</p>
+
+      <p>HTML Table Practice &bull; Student Information</p>
+    </footer>
+  </body>
+</html>

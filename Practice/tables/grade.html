@@ -1,0 +1,463 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grade table</title>
+    <link rel="shortcut icon" href="/Labs/assets/logos/kust_ioc_logo.jpg" type="image/x-icon">
+    <style>
+      a {
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Academic grade Transcript</h1>
+    <hr />
+    <br />
+    <br />
+
+    <a href="/Practice/tables/student_Info.html">chech student info table</a>
+
+    <a href="/Practice/tables/academic_transcript.html"
+      >check academic transcript</a
+    >
+
+    <a href="/Practice/tables/summary.html">check summary table</a>
+
+    <a href="/Practice/tables/grade.html">check grade table</a>
+    <br />
+    <br />
+    <br />
+
+    <table border="1" cellpadding="5" cellspacing="0" width="100%">
+      <th colspan="3">Grade Scale</th>
+
+      <tr>
+        <th>Grade</th>
+        <th>Marks Range</th>
+        <th>Grade Point</th>
+      </tr>
+
+      <tr>
+        <td>A</td>
+        <td>85 - 100</td>
+        <td>4.00</td>
+      </tr>
+
+      <tr>
+        <td>A-</td>
+        <td>80 - 84</td>
+        <td>3.75</td>
+      </tr>
+
+      <tr>
+        <td>B+</td>
+        <td>75 - 79</td>
+        <td>3.50</td>
+      </tr>
+
+      <tr>
+        <td>B</td>
+        <td>70 - 74</td>
+        <td>3.00</td>
+      </tr>
+
+      <tr>
+        <td>C</td>
+        <td>60 - 69</td>
+        <td>2.00</td>
+      </tr>
+
+      <tr>
+        <td>F</td>
+        <td>Below 50</td>
+        <td>0.00</td>
+      </tr>
+    </table>
+
+     <br>
+    <br>
+
+    <a href="/Practice/tables/index.html">Home</a>
+  </body>
+
+</html> -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Academic Grade Table</title>
+
+    <link
+      rel="shortcut icon"
+      href="../../Labs/assets/logos/kust_ioc_logo.jpg"
+      type="image/x-icon"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f5f5f5;
+        color: #222;
+        line-height: 1.6;
+      }
+
+      /* Header */
+
+      header {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+      }
+
+      header h1 {
+        margin: 0 0 8px;
+      }
+
+      header p {
+        margin: 0;
+        color: #ddd;
+      }
+
+      /* Navigation */
+
+      nav {
+        background-color: white;
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+      }
+
+      nav a {
+        display: inline-block;
+        text-decoration: none;
+        color: #222;
+        border: 1px solid #222;
+        padding: 8px 12px;
+        margin: 4px;
+        border-radius: 5px;
+      }
+
+      nav a:hover {
+        background-color: #222;
+        color: white;
+      }
+
+      /* Main */
+
+      main {
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 0 20px;
+      }
+
+      /* Introduction */
+
+      .intro {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 25px;
+        margin-bottom: 25px;
+      }
+
+      .intro h2 {
+        margin-top: 0;
+      }
+
+      /* Grade Table */
+
+      .grade-section {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 25px;
+        overflow-x: auto;
+      }
+
+      .grade-section h2 {
+        margin-top: 0;
+        border-bottom: 2px solid #222;
+        padding-bottom: 10px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #555;
+        padding: 14px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #222;
+        color: white;
+      }
+
+      .title {
+        background-color: #444;
+        color: white;
+        font-size: 18px;
+      }
+
+      /* Grade colors */
+
+      .grade-a {
+        font-weight: bold;
+        color: #087f23;
+      }
+
+      .grade-b {
+        font-weight: bold;
+        color: #1769aa;
+      }
+
+      .grade-c {
+        font-weight: bold;
+        color: #996c00;
+      }
+
+      .grade-f {
+        font-weight: bold;
+        color: #c62828;
+      }
+
+      /* Bottom Navigation */
+
+      .bottom-nav {
+        text-align: center;
+        margin-top: 25px;
+      }
+
+      .bottom-nav a {
+        display: inline-block;
+        text-decoration: none;
+        color: #222;
+        border: 1px solid #222;
+        padding: 8px 14px;
+        margin: 4px;
+        border-radius: 5px;
+      }
+
+      .bottom-nav a:hover {
+        background-color: #222;
+        color: white;
+      }
+
+      /* Footer */
+
+      footer {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header>
+      <h1>Academic Grade Table</h1>
+
+      <p>HTML Table Practice — Grade Scale</p>
+    </header>
+
+    <!-- Navigation -->
+
+    <nav>
+      <a href="../practice.html"> ← Back to Practice </a>
+
+      <a href="index.html"> Table Practice </a>
+
+      <a href="../../index.html"> Main Home </a>
+
+      <a href="../../Docs/docs.html"> See Docs </a>
+    </nav>
+
+    <main>
+      <!-- Introduction -->
+
+      <section class="intro">
+        <h2>Grade Scale</h2>
+
+        <p>
+          This table demonstrates how marks are mapped to academic grades and
+          grade points using HTML tables.
+        </p>
+
+        <p>
+          It uses table rows, table headers, table data cells and
+          <code>colspan</code>.
+        </p>
+      </section>
+
+      <!-- Grade Table -->
+
+      <section class="grade-section">
+        <h2>Academic Grade Scale</h2>
+
+        <table>
+          <tr>
+            <th class="title" colspan="3">Grade Scale</th>
+          </tr>
+
+          <tr>
+            <th>Grade</th>
+
+            <th>Marks Range</th>
+
+            <th>Grade Point</th>
+          </tr>
+
+          <tr>
+            <td class="grade-a">A</td>
+
+            <td>85 - 100</td>
+
+            <td>4.00</td>
+          </tr>
+
+          <tr>
+            <td class="grade-a">A-</td>
+
+            <td>80 - 84</td>
+
+            <td>3.75</td>
+          </tr>
+
+          <tr>
+            <td class="grade-b">B+</td>
+
+            <td>75 - 79</td>
+
+            <td>3.50</td>
+          </tr>
+
+          <tr>
+            <td class="grade-b">B</td>
+
+            <td>70 - 74</td>
+
+            <td>3.00</td>
+          </tr>
+
+          <tr>
+            <td class="grade-c">C</td>
+
+            <td>60 - 69</td>
+
+            <td>2.00</td>
+          </tr>
+
+          <tr>
+            <td class="grade-f">F</td>
+
+            <td>Below 50</td>
+
+            <td>0.00</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- Grade Explanation -->
+
+      <section class="intro">
+        <h2>Grade Information</h2>
+
+        <ul>
+          <li>
+            <strong>A:</strong>
+            85 - 100 marks, 4.00 grade points
+          </li>
+
+          <li>
+            <strong>A-:</strong>
+            80 - 84 marks, 3.75 grade points
+          </li>
+
+          <li>
+            <strong>B+:</strong>
+            75 - 79 marks, 3.50 grade points
+          </li>
+
+          <li>
+            <strong>B:</strong>
+            70 - 74 marks, 3.00 grade points
+          </li>
+
+          <li>
+            <strong>C:</strong>
+            60 - 69 marks, 2.00 grade points
+          </li>
+
+          <li>
+            <strong>F:</strong>
+            Below 50 marks, 0.00 grade points
+          </li>
+        </ul>
+      </section>
+
+      <!-- HTML Concepts -->
+
+      <section class="intro">
+        <h2>HTML Concepts Used</h2>
+
+        <ul>
+          <li><code>&lt;table&gt;</code> — Defines the table</li>
+
+          <li><code>&lt;tr&gt;</code> — Defines a table row</li>
+
+          <li><code>&lt;th&gt;</code> — Defines a table heading</li>
+
+          <li><code>&lt;td&gt;</code> — Defines table data</li>
+
+          <li><code>colspan</code> — Merges multiple columns</li>
+
+          <li>CSS classes — Used to style different grades</li>
+        </ul>
+      </section>
+
+      <!-- Bottom Navigation -->
+
+      <div class="bottom-nav">
+        <a href="student_Info.html"> Student Info </a>
+
+        <a href="academic_transcript.html"> Academic Transcript </a>
+
+        <a href="summary.html"> Summary Table </a>
+
+        <a href="index.html"> ← Table Practice </a>
+
+        <a href="../practice.html"> Practice Home </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+      <p>Web Development Course</p>
+
+      <p>HTML Table Practice &bull; Grade Scale</p>
+    </footer>
+  </body>
+</html>
