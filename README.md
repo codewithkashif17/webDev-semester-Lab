@@ -41,7 +41,7 @@ All practical laboratory tasks are organized by lab number.
 
 | Lab | Topic | Status | Documentation |
 |---|---|---|---|
-| **Lab 01** | HTML Fundamentals | ✅ Completed | [Open Lab 01](./labs/lab-01/README.md) |
+| **Lab 01** | HTML Fundamentals | ✅ Completed | [Open Lab 01](./Labs/lab-01/README.MD) |
 | **Lab 02** | Coming Soon |  Pending | — |
 | **Lab 03** | Coming Soon |  Pending | — |
 | **Lab 04** | Coming Soon |  Pending | — |
@@ -74,7 +74,7 @@ All course assignments will be maintained in this section.
 
 | Assignment | Topic | Status | Documentation |
 |---|---|---|---|
-| Assignment 01 | Coming Soon | ⏳ | — |
+| Assignment 01 | complete | ✔️ | **[Open Assignment 01 Documentation](./Assignments/assignment-01/README.md)** |
 | Assignment 02 | Coming Soon | ⏳ | — |
 | Assignment 03 | Coming Soon | ⏳ | — |
 
