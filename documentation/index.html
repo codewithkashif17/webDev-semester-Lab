@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Documentation | Web Development Course</title>
+
+    <link rel="stylesheet" href="../site-theme.css" />
+    <link rel="stylesheet" href="./documentation.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js"
+      defer
+    ></script>
+    <script src="./documentation.js" defer></script>
+  </head>
+  <body>
+    <header class="docs-header">
+      <h1>Course Documentation</h1>
+      <p>Learn how this website works, one concept at a time.</p>
+      <a href="../index.html">← Back to Home</a>
+      <button id="theme-toggle" class="theme-toggle" type="button">
+        Switch To Light Mode
+      </button>
+    </header>
+
+    <main class="docs-layout">
+      <aside class="docs-sidebar">
+        <h2>CSS & JavaScript</h2>
+
+        <button class="docs-link active" data-doc="site-theme" type="button">
+          Site Theme — CSS
+        </button>
+
+        <button class="docs-link" data-doc="theme-toggle" type="button">
+          Dark / Light Toggle
+        </button>
+      </aside>
+
+      <article class="docs-content">
+        <p id="docs-status" role="status">Loading documentation...</p>
+
+        <div id="docs-rendered"></div>
+      </article>
+    </main>
+
+    <footer class="docs-footer">
+      <p>Web Development Course | KUST</p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

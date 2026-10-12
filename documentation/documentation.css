@@ -1,0 +1,151 @@
+
+/* Documentation Page */
+
+.docs-header {
+  padding: 2rem 1.25rem;
+  background: linear-gradient(
+    135deg,
+    var(--color-header-start),
+    var(--color-header-end)
+  );
+}
+
+.docs-header h1,
+.docs-header p,
+.docs-header a {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.docs-header h1 {
+  margin-top: 0;
+}
+
+.docs-header a {
+  display: block;
+  color: var(--color-ice);
+}
+
+.docs-layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 1.5rem;
+  width: min(calc(100% - 2rem), 1160px);
+  margin: 2rem auto;
+  align-items: start;
+}
+
+.docs-sidebar,
+.docs-content {
+  min-width: 0;
+  padding: 1.25rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+}
+
+.docs-sidebar {
+  position: sticky;
+  top: 1rem;
+}
+
+.docs-sidebar h2 {
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+.docs-link {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.docs-link:hover,
+.docs-link.active {
+  border-color: var(--color-ice);
+  background: var(--color-bg);
+}
+
+.docs-link:focus-visible {
+  outline: 2px solid var(--color-ice);
+  outline-offset: 3px;
+}
+
+.docs-content {
+  overflow-wrap: anywhere;
+  line-height: 1.7;
+}
+
+.docs-content h1,
+.docs-content h2,
+.docs-content h3 {
+  color: var(--color-ice);
+  line-height: 1.3;
+}
+
+.docs-content pre {
+  overflow-x: auto;
+  padding: 1rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.docs-content code {
+  font-family: Consolas, monospace;
+  font-size: 0.9em;
+}
+
+.docs-content :not(pre) > code {
+  padding: 0.15rem 0.35rem;
+  background: var(--color-bg);
+  border-radius: 4px;
+}
+
+.docs-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.docs-content th,
+.docs-content td {
+  padding: 0.65rem;
+  text-align: left;
+  border: 1px solid var(--color-border);
+}
+
+.docs-content th {
+  background: var(--color-bg);
+}
+
+.docs-content a {
+  color: var(--color-ice);
+}
+
+.docs-content img {
+  max-width: 100%;
+}
+
+.docs-footer {
+  padding: 1rem;
+  text-align: center;
+  color: var(--color-muted);
+}
+
+@media (max-width: 700px) {
+  .docs-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .docs-sidebar {
+    position: static;
+  }
+}
