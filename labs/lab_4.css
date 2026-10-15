@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    color: white;
+}
+
+header {
+  background-color: darkslategray;
+  padding: 10px;
+}
+
+header h1 {
+    color: white;
+}
+nav , h1 {
+    display: inline-block;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    margin: 5px;
+}
+
+
+button{
+    padding: 5px 10px;
+    background-color: darkslategray;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+button:hover{
+    background-color: white;
+    color: darkslategray;
+}
+
+
+.box{
+    display: inline-block;
+    border: 2px solid darkslategrey;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 280px;
+}
+
+
+
+
+img{
+    display: block;
+    width: 250px;
+}
+p, h1{
+    color: black;
+}
